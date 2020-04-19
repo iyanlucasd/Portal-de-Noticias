@@ -18,6 +18,12 @@
  .banner {
    display: none;
  }
+ .barra form {
+   display: none;
+ }
+.dropdown button{
+  background-color: #3c3e4f;
+}
 }
 
 .btn-group button {
@@ -46,9 +52,15 @@
 /* FIM CARROCEU 2 */
 
 /* CONTEUDO */
-.texto1 p,h1 {
+.texto1 p, h1 {
   color: whitesmoke;
   text-align: center;
+}
+.titulo1 h1 {
+  color: #fbd46c;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
 }
 .img_grande img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -94,7 +106,7 @@
 .txt_pequena_collum h3 {
   color: #7ed957;
   font-weight: bolder;
-  text-align: left;
+  text-align: center;
   font-size: xx-large;
 
 }
@@ -112,7 +124,7 @@
 
 }
 .img_pequena_gossip img {
-  max-width: 200px;
+  max-width: 250px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 30px;
@@ -120,7 +132,7 @@
 }
 .txt_pequena_collum p {
   color: snow;
-  text-align: left;
+  text-align: center;
   font-size: small;
   margin-bottom: 60px;
 }
@@ -156,6 +168,7 @@
   font-weight: bolder;
   text-align: left;
   font-size: xx-large;
+  
 
 }
 .img_pequena_video img {
@@ -178,6 +191,9 @@ iframe{
 .destaque_txt h1{
   margin-top: 30px;
   margin-bottom: 30px;
+  color: snow;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: lighter;
 }
 .destaque_txt h2{
   color: #3194ff;
@@ -185,6 +201,22 @@ iframe{
 }
 .destaque_txt p{
  color: #fbd46c;
+}
+.musicas iframe{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.titulo_noticias h1{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #ffdde2;
+  font-weight: bold;
+}
+.titulo_musicas h1{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #ffdde2;
+  font-weight: bold;
 }
 @media (max-width: 1024px) {
   .grid {
@@ -213,12 +245,27 @@ iframe{
     margin-bottom: 140px;
   }
   .img_pequena img {
-    max-width: 300px;
+    max-width: 400px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-right: 30px;
     margin-bottom: 35px;
   }
+  .txt_pequena_esporte h3 {
+    color: #7ed957;
+    font-weight: bolder;
+    text-align: center;
+    font-size: xx-large;
+    display: none;
+  }
+  .txt_pequena_esporte p {
+    color: snow;
+    text-align: center;
+    font-size: small;
+    display: none;
+    margin-top: 50px;
+  }
+
  }
  @media (max-width: 720px)
  {
@@ -237,6 +284,19 @@ iframe{
     margin-bottom: 140px;
     display: none;
   }
+  .banner1 img{
+    max-width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  .banner3 img{
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 30px;
+    margin-bottom: 20px;
+    display: none;
+  }
  }
 /* FIM CONTEUDO */
 /* BANNER1 */
@@ -247,7 +307,7 @@ iframe{
   margin-bottom: 20px;
 }
 .banner3 img{
-  max-width: 100px;
+  max-width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-right: 30px;
   margin-bottom: 20px;
@@ -258,15 +318,16 @@ iframe{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-right: 30px;
   margin-bottom: 20px;
+  margin-top: 20px;
   right: 20px;
 }
 .img_grande_esporte img {
   max-width: 300px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 20px;
-  right: 20px;
+  right: 40px;
 }
 /* FIM BANNER1 */
 /* BANNER2 */
@@ -331,7 +392,7 @@ iframe{
 }
 .footer_buttons {
   color: whitesmoke;
-  margin-top: 10px;
+  margin-top: 30px;
   text-decoration: none;
 }
 
