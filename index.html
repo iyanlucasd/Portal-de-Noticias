@@ -10,160 +10,174 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/304fafef48.js" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/modernizr.custom.js"></script>
+    <script src="/news.js"></script>
 </head>
 
 <body>
     <div class="page">
-        <header class="cabecalho">
-            <div class="logo">
-                <!-- Navigation -->
-                <div class="nav">
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                        <div class="container">
-                            <a class="navbar-brand" href="#">Portal de Notícias</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarResponsive">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <div class="regiao">
-                                            <!--Dropdown primary-->
-                                            <div class="dropdown">
-                                                <!--Trigger-->
-                                                <button class="btn btn-primary dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Regiões</button>
+        <div class="conteiner-fuid">
+            <div class="row h-12">
+                <div class="col-12">
+                    <header class="cabecalho">
+                        <div class="logo">
+                            <!-- Navigation -->
+                            <div class="nav">
+                                <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                                    <a class="navbar-brand" href="#">Portal de Notícias</a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item active">
+                                                <div class="regiao">
+                                                    <!--Dropdown primary-->
+                                                    <div class="dropdown">
+                                                        <!--Trigger-->
+                                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                                            id="dropdownMenu1" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false">NEWS API</button>
 
-                                                <!--Menu-->
-                                                <div class="dropdown-menu dropdown-primary">
-                                                    <a class="dropdown-item" href="#">Norte</a>
-                                                    <a class="dropdown-item" href="#">Nordeste</a>
-                                                    <a class="dropdown-item" href="#">Centro-Oeste</a>
-                                                    <a class="dropdown-item" href="#">Sudeste</a>
-                                                    <a class="dropdown-item" href="#">Sul</a>
-                                                    <a class="dropdown-item" href="#">Exterior</a>
+                                                        <!--Menu-->
+                                                        <div class="dropdown-menu dropdown-primary">
+                                                            <a class="dropdown-item" href="/esporte.html">Esporte</a>
+                                                            <a class="dropdown-item" href="/gossip.html">Gossip</a>
+                                                            <a class="dropdown-item" href="/diversos.html">Diversos</a>
+                                                        </div>
+                                                    </div>
+                                                    <!--/Dropdown primary-->
                                                 </div>
-                                            </div>
-                                            <!--/Dropdown primary-->
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Esportes</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Contato</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="barra">
-                                <form class="form-inline my-2 my-lg-0">
-                                    <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                        aria-label="Search">
-                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                                </form>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Esportes</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Services</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Contato</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="barra">
+                                        <form class="form-inline my-2 my-lg-0">
+                                            <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                            <button class="btn btn-outline-success my-2 my-sm-0"
+                                                type="submit">Search</button>
+                                        </form>
+                                    </div>
+                                </nav>
                             </div>
                         </div>
-                    </nav>
+                    </header>
                 </div>
-                <!-- Header -->
-                <header class="bg-primary py-5 mb-5">
-                    <div class="container h-100">
-                        <div class="row h-12 align-items-center">
-                            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
-                                <div class="header_content">
-                                    <h1 class="display-3 text-white">The Panelinha Project</h1>
-                                    <p class="lead text-white-50">Um projeto de Desenvolvimento de Interfaces Web</p>
-                                    <p class="lead text-white-50">O portal de notícias com tema escuro! UwU</p>
-                                </div>
-                            </div>
-                            <div class="Hader_banner col-lg-7 col-md-12 col-sm-12 col-12">
-                                <div class="banner">
-                                    <img src="./imgs/portal de notícias.png" alt="">
-                                </div>
-                            </div>
+            </div>
+        </div>
+        <!-- Header -->
+        <header class="bg-primary py-5 mb-5">
+            <div class="container h-100">
+                <div class="row h-12 align-items-center">
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                        <div class="header_content">
+                            <h1 class="display-3 text-white">The Panelinha Project</h1>
+                            <p class="lead text-white-50">Um projeto de Desenvolvimento de
+                                Interfaces Web</p>
+                            <p class="lead text-white-50">O portal de notícias com tema escuro! UwU
+                            </p>
                         </div>
                     </div>
-                </header>
-                <header>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                            <!-- Slide One - Set the background image for this slide in the line below -->
-                            <div class="carousel-item active"
-                                style="background-image: url('https://graphics8.nytimes.com/images/2011/12/25/sunday-review/25YIP_ARABSPRING-slide-TEB9/25YIP_ARABSPRING-slide-TEB9-jumbo.jpg')">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h3 class="display-4">A Primavera e a Crise</h3>
-                                    <p class="lead">As revoluções contra o autoritarismo no oriente médio na pandemia.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Slide Two - Set the background image for this slide in the line below -->
-                            <div class="carousel-item"
-                                style="background-image: url('https://static01.nyt.com/images/2019/12/15/multimedia/15YIP-January-slide-631U/15YIP-January-slide-631U-superJumbo.jpg')">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h3 class="display-4">Crônica: A França e suas Chamas</h3>
-                                    <p class="lead">Um pequeno comentário sobre a situação atual do premiê francês e
-                                        seus predecessores</p>
-                                </div>
-                            </div>
-                            <!-- Slide Three - Set the background image for this slide in the line below -->
-                            <div class="carousel-item"
-                                style="background-image: url('https://static01.nyt.com/images/2019/12/15/multimedia/15YIP-January-slide-VHRG/15YIP-January-slide-VHRG-superJumbo.jpg')">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h3 class="display-4">O Ano em Fotos</h3>
-                                    <p class="lead">A seleção das melhores fotografias do 1º trimestre de 2020</p>
-                                </div>
-                            </div>
+                    <div class="Hader_banner col-lg-7 col-md-12 col-sm-12 col-12">
+                        <div class="banner">
+                            <img src="./imgs/portal de notícias.png" alt="">
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
-                </header>
-                <!-- Page Content -->
-                <div class="conteudo">
-                    <section class="py-5">
-                        <div class="container">
-                            <div class="texto1">
-                                <div class="row h-12 justify-content-between">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <div class="titulo1">
-                                            <h1 class="font-weight-light">O Portal</h1>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <p class="lead">Construído com muito afinco, a equipe da Panelinha apresenta um
-                                            tipo diferente de jornalismo. Com a proposta de redigir reportagens com teor
-                                            literário temos como objetivo, não a arte de escrever por si só, mas sim a
-                                            arte de ensinar, de informar, de viver cada história.<br><br>
-                                            Bon appetit.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
                 </div>
             </div>
         </header>
+        <header>
+            <div class="container-fluid">
+                <div class="row h-12">
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                </li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <!-- Slide One - Set the background image for this slide in the line below -->
+                                <div class="carousel-item active"
+                                    style="background-image: url('https://graphics8.nytimes.com/images/2011/12/25/sunday-review/25YIP_ARABSPRING-slide-TEB9/25YIP_ARABSPRING-slide-TEB9-jumbo.jpg')">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h3 class="display-4">A Primavera e a Crise</h3>
+                                        <p class="lead">As revoluções contra o autoritarismo no oriente médio na
+                                            pandemia.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Slide Two - Set the background image for this slide in the line below -->
+                                <div class="carousel-item"
+                                    style="background-image: url('https://static01.nyt.com/images/2019/12/15/multimedia/15YIP-January-slide-631U/15YIP-January-slide-631U-superJumbo.jpg')">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h3 class="display-4">Crônica: A França e suas Chamas</h3>
+                                        <p class="lead">Um pequeno comentário sobre a situação atual do premiê
+                                            francês e
+                                            seus predecessores</p>
+                                    </div>
+                                </div>
+                                <!-- Slide Three - Set the background image for this slide in the line below -->
+                                <div class="carousel-item"
+                                    style="background-image: url('https://static01.nyt.com/images/2019/12/15/multimedia/15YIP-January-slide-VHRG/15YIP-January-slide-VHRG-superJumbo.jpg')">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h3 class="display-4">O Ano em Fotos</h3>
+                                        <p class="lead">A seleção das melhores fotografias do 1º trimestre de
+                                            2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Page Content -->
+        <div class="container">
+            <div class="conteudo">
+                <section class="py-5">
+                    <div class="texto1">
+                        <div class="row h-12 justify-content-between">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="titulo1">
+                                    <h1 class="font-weight-light">O Portal</h1>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <p class="lead">Construído com muito afinco, a equipe da Panelinha apresenta um
+                                    tipo diferente de jornalismo. Com a proposta de redigir reportagens com teor
+                                    literário temos como objetivo, não a arte de escrever por si só, mas sim a
+                                    arte de ensinar, de informar, de viver cada história.<br><br>
+                                    Bon appetit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
         <section>
             <div class="noticias">
                 <div class="container">
@@ -205,8 +219,8 @@
                         </div>
                     </div>
                     <div class="row h-12 justify-content-center align-content-center">
-                        <div class="banner1">
-                            <div class="col-lg-12">
+                        <div class="col-lg-12">
+                            <div class="banner1">
                                 <img src="./imgs/1.png" alt="">
                             </div>
                         </div>
@@ -230,15 +244,38 @@
                                 </p>
                             </div>
                         </div>
-                        <!-- FIM DESTAQUE -->
-                        <!-- COMEÇO NOTÍCIAS -->
-                        <div class="row h-12 justify-content-center align-content-center">
-                            <div class="banner2">
-                                <div class="col-lg-12">
-                                    <img src="./imgs/B2.png" alt="">
-                                </div>
+
+                    </div>
+                    <div class="row h-12 align-content-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="titulo1">
+                                <h1 class="font-weight-light">A News API</h1>
                             </div>
                         </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class=" destaque_txt">
+                                <p class="lead">Aqui seguem 2 exemplos para a apresentação da api com 2 notícias geradas
+                                </p>
+                            </div>
+                        </div>
+                        <div class="news-api">
+                        </div>
+                        <div class="news-api">
+                        </div>
+                        <div class="news-api">
+                        </div>
+                        <div class="news-api">
+                        </div>
+                    </div>
+                    <!-- FIM DESTAQUE -->
+                    <!-- COMEÇO NOTÍCIAS -->
+                    <div class="row h-12 justify-content-center align-content-center">
+                        <div class="col-lg-12">
+                            <div class="banner2">
+                                <img src="./imgs/B2.png" alt="">
+                            </div>
+                        </div>
+
                         <div class="img_grande col-lg-6 ">
                             <ul class="grid cs-style-3">
                                 <div class="grid_noticias">
@@ -269,107 +306,133 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="row h-12 justify-content-between">
-                            <div class="video col-lg-6 ">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/cAE5R6Qf1Uk"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="img_pequena_video">
-                                    <a href="#"><img src="./imgs/f1.jpg"></a>
-                                    <a href="#"><img src="./imgs/f2.jpg"></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="txt_pequena_video">
-                                     <h3>Iêmen, Danos Colaterais.</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum delectus hic
-                                        nesciunt!
-                                    </p>
-                                    <h3>Res Publica</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque assumenda odit
-                                        cupiditate!</p>
-                                </div>
+                    </div>
+                    <div class="row h-12 justify-content-between">
+                        <div class="video col-lg-6 ">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/cAE5R6Qf1Uk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="img_pequena_video">
+                                <a href="#"><img src="./imgs/f1.jpg"></a>
+                                <a href="#"><img src="./imgs/f2.jpg"></a>
                             </div>
                         </div>
-                        <div class="row h-12">
-                            <div class="col-lg-4">
-                                <!-- coluna da esquerda -->
-                                <div class="img_grande_esporte display-2">
-                                    <a href="#"><img src="./imgs/f6.jpg"></a>
-                                </div>
-                                <div class="txt_pequena_noticia">
-                                    <h3>Lorem, ipsum dolor.</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-                                        delectus hic
-                                        nesciunt!
-                                    </p>
-                                </div>
-                                <!-- fim coluna esquerda -->
-                            </div>
-                            <div class="col-lg-4">
-                                <!-- coluna meio -->
-                                <div class="img_grande_esporte display-2">
-                                    <a href="#"><img src="./imgs/f10.jpg"></a>
-                                </div>
-                                <div class="txt_pequena_noticia">
-                                    <h3>Lorem, ipsum dolor.</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-                                        delectus hic
-                                        nesciunt!
-                                    </p>
-                                </div>
-                                <!-- fim coluna meio -->
-                            </div>
-                            <div class="col-lg-4">
-                                <!-- coluna direita -->
-                                <div class="img_grande_esporte display-2">
-                                    <a href="#"><img src="./imgs/f8.jpg"></a>
-                                </div>
-                                <div class="txt_pequena_noticia">
-                                    <h3>Lorem, ipsum dolor.</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-                                        delectus hic
-                                        nesciunt!
-                                    </p>
-                                </div>
-                                <!-- fim coluna direita -->
+                        <div class="col-lg-3">
+                            <div class="txt_pequena_video">
+                                <h3>Iêmen, Danos Colaterais.</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum delectus hic
+                                    nesciunt!
+                                </p>
+                                <h3>Res Publica</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque assumenda odit
+                                    cupiditate!</p>
                             </div>
                         </div>
                     </div>
-                    <!-- FIM NOTICIAS -->
-                    <!-- COMEÇO ESPORTE -->
+                    <div class="row h-12">
+                        <div class="col-lg-4">
+                            <!-- coluna da esquerda -->
+                            <div class="img_grande_esporte display-2">
+                                <a href="#"><img src="./imgs/f6.jpg"></a>
+                            </div>
+                            <div class="txt_pequena_noticia">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                    delectus hic
+                                    nesciunt!
+                                </p>
+                            </div>
+                            <!-- fim coluna esquerda -->
+                        </div>
+                        <div class="col-lg-4">
+                            <!-- coluna meio -->
+                            <div class="img_grande_esporte display-2">
+                                <a href="#"><img src="./imgs/f10.jpg"></a>
+                            </div>
+                            <div class="txt_pequena_noticia">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                    delectus hic
+                                    nesciunt!
+                                </p>
+                            </div>
+                            <!-- fim coluna meio -->
+                        </div>
+                        <div class="col-lg-4">
+                            <!-- coluna direita -->
+                            <div class="img_grande_esporte display-2">
+                                <a href="#"><img src="./imgs/f8.jpg"></a>
+                            </div>
+                            <div class="txt_pequena_noticia">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                    delectus hic
+                                    nesciunt!
+                                </p>
+                            </div>
+                            <!-- fim coluna direita -->
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM NOTICIAS -->
+                <!-- COMEÇO ESPORTE -->
+                <div class="container">
                     <div class="row h-12 justify-content-center align-content-center">
-                        <div class="banner2">
-                            <div class="col-lg-12">
+                        <div class="col-lg-12">
+                            <div class="banner2">
                                 <img src="./imgs/esPORTE.png" alt="">
                             </div>
                         </div>
-                        <div class="esporte">
-                            <div class="row h-12 justify-content-between">
-                                <div class="img_grande col-lg-8 ">
-                                    <ul class="grid cs-style-4">
-                                        <li>
-                                            <figure>
-                                                <img src="./imgs/f18.jpg" alt="img01">
-                                                <figcaption>
-                                                    <h3>Casa Vazia</h3>
-                                                    <span>Iyan Lucas</span>
-                                                    <a href="http://dribbble.com/shots/1115632-Camera">Consuma</a>
-                                                </figcaption>
-                                            </figure>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div id="carouselEsporte" class="carousel slide" data-ride="carousel">
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carouselEsporte" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carouselEsporte" data-slide-to="1"></li>
-                                        </ol>
-                                        <div class="carousel-inner">
+                    </div>
+                    <div class="esporte">
+                        <div class="row h-12 justify-content-between">
+                            <div class="img_grande col-lg-8 ">
+                                <ul class="grid cs-style-4">
+                                    <li>
+                                        <figure>
+                                            <img src="./imgs/f18.jpg" alt="img01">
+                                            <figcaption>
+                                                <h3>Casa Vazia</h3>
+                                                <span>Iyan Lucas</span>
+                                                <a href="http://dribbble.com/shots/1115632-Camera">Consuma</a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div id="carouselEsporte" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselEsporte" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselEsporte" data-slide-to="1"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="img_pequena_esporte display-2">
+                                                <img class="d-block w-100" src="./imgs/g1_foto2.jpg" alt="First slide">
+                                            </div>
+                                            <div class="txt_pequena_esporte">
+                                                <h3>Lorem, ipsum dolor.</h3>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                                    delectus hic
+                                                    nesciunt!
+                                                </p>
+                                            </div>
+                                            <div class="img_pequena_esporte display-2">
+                                                <img class="d-block w-100" src="./imgs/g1_foto2.jpg" alt="First slide">
+                                            </div>
+                                            <div class="txt_pequena_esporte">
+                                                <h3>Lorem, ipsum dolor.</h3>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                                    delectus hic
+                                                    nesciunt!
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
                                             <div class="carousel-item active">
                                                 <div class="img_pequena_esporte display-2">
                                                     <img class="d-block w-100" src="./imgs/g1_foto2.jpg"
@@ -377,7 +440,8 @@
                                                 </div>
                                                 <div class="txt_pequena_esporte">
                                                     <h3>Lorem, ipsum dolor.</h3>
-                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                        Nostrum
                                                         delectus hic
                                                         nesciunt!
                                                     </p>
@@ -388,226 +452,194 @@
                                                 </div>
                                                 <div class="txt_pequena_esporte">
                                                     <h3>Lorem, ipsum dolor.</h3>
-                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                        Nostrum
                                                         delectus hic
                                                         nesciunt!
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="carousel-item">
-                                                <div class="carousel-item active">
-                                                    <div class="img_pequena_esporte display-2">
-                                                        <img class="d-block w-100" src="./imgs/g1_foto2.jpg"
-                                                            alt="First slide">
-                                                    </div>
-                                                    <div class="txt_pequena_esporte">
-                                                        <h3>Lorem, ipsum dolor.</h3>
-                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                                            Nostrum
-                                                            delectus hic
-                                                            nesciunt!
-                                                        </p>
-                                                    </div>
-                                                    <div class="img_pequena_esporte display-2">
-                                                        <img class="d-block w-100" src="./imgs/g1_foto2.jpg"
-                                                            alt="First slide">
-                                                    </div>
-                                                    <div class="txt_pequena_esporte">
-                                                        <h3>Lorem, ipsum dolor.</h3>
-                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                                            Nostrum
-                                                            delectus hic
-                                                            nesciunt!
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
-
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
-                        <div class="row h-12">
-                            <div class="col-lg-4">
-                                <!-- coluna da esquerda -->
-                                <div class="img_grande_esporte display-2">
-                                    <a href="#"><img src="./imgs/f19.jpg"></a>
-                                </div>
-                                <div class="txt_pequena_collum">
-                                    <h3>Lorem, ipsum dolor.</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-                                        delectus hic
-                                        nesciunt!
-                                    </p>
-                                </div>
-                                <!-- fim coluna esquerda -->
+                    </div>
+                    <div class="row h-12">
+                        <div class="col-lg-4">
+                            <!-- coluna da esquerda -->
+                            <div class="img_grande_esporte display-2">
+                                <a href="#"><img src="./imgs/f19.jpg"></a>
                             </div>
-                            <div class="col-lg-4">
-                                <!-- coluna meio -->
-                                <div class="img_grande_esporte display-2">
-                                    <a href="#"><img src="./imgs/g1_foto3.jpg"></a>
-                                </div>
-                                <div class="txt_pequena_collum">
-                                    <h3>Lorem, ipsum dolor.</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-                                        delectus hic
-                                        nesciunt!
-                                    </p>
-                                </div>
-                                <!-- fim coluna meio -->
+                            <div class="txt_pequena_collum">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                    delectus hic
+                                    nesciunt!
+                                </p>
                             </div>
-                            <div class="col-lg-4">
-                                <!-- coluna direita -->
-                                <div class="img_grande_esporte display-2">
-                                    <a href="#"><img src="./imgs/f5.jpg"></a>
-                                </div>
-                                <div class="txt_pequena_collum">
-                                    <h3>Lorem, ipsum dolor.</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-                                        delectus hic
-                                        nesciunt!
-                                    </p>
-                                </div>
-                                <!-- fim coluna direita -->
+                            <!-- fim coluna esquerda -->
+                        </div>
+                        <div class="col-lg-4">
+                            <!-- coluna meio -->
+                            <div class="img_grande_esporte display-2">
+                                <a href="#"><img src="./imgs/g1_foto3.jpg"></a>
                             </div>
+                            <div class="txt_pequena_collum">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                    delectus hic
+                                    nesciunt!
+                                </p>
+                            </div>
+                            <!-- fim coluna meio -->
+                        </div>
+                        <div class="col-lg-4">
+                            <!-- coluna direita -->
+                            <div class="img_grande_esporte display-2">
+                                <a href="#"><img src="./imgs/f5.jpg"></a>
+                            </div>
+                            <div class="txt_pequena_collum">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                    delectus hic
+                                    nesciunt!
+                                </p>
+                            </div>
+                            <!-- fim coluna direita -->
                         </div>
                     </div>
                     <!-- FIM ESPORTE -->
                     <!-- COMEÇO GOSSIP -->
                     <div class="row h-12 justify-content-center align-content-center">
-                        <div class="banner2">
-                            <div class="col-lg-12">
+                        <div class="col-lg-12">
+                            <div class="banner2">
                                 <img src="./imgs/B3.png" alt="">
                             </div>
                         </div>
-                        <div class="row h-12">
-                            <div class="col-lg-3">
-                                <!-- coluna da esquerda -->
-                                <div class="img_pequena_gossip display-2">
-                                    <a href="#"><img src="./imgs/f3.jpg"></a>
-                                </div>
-                                <div class="txt_pequena_gossip">
-                                    <h3>Lorem, ipsum dolor.</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-                                        delectus hic
-                                        nesciunt!
-                                    </p>
-                                </div>
-                                <div class="img_pequena_gossip display-2">
-                                    <a href="#"><img src="./imgs/f7.jpg"></a>
-                                </div>
-                                <div class="txt_pequena_gossip">
-                                    <h3>Lorem, ipsum dolor.</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-                                        delectus hic
-                                        nesciunt!
-                                    </p>
-                                </div>
-
+                    </div>
+                    <div class="row h-12">
+                        <div class="col-lg-3">
+                            <!-- coluna da esquerda -->
+                            <div class="img_pequena_gossip display-2">
+                                <a href="#"><img src="./imgs/f3.jpg"></a>
                             </div>
-                            <div class="col-lg-3">
-                                <!-- coluna da esquerda -->
-                                <div class="img_pequena_gossip display-2">
-                                    <a href="#"><img src="./imgs/f12.jpg"></a>
-                                </div>
-                                <div class="txt_pequena_gossip">
-                                    <h3>Lorem, ipsum dolor.</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-                                        delectus hic
-                                        nesciunt!
-                                    </p>
-                                </div>
-                                <div class="img_pequena_gossip display-2">
-                                    <a href="#"><img src="./imgs/f20.jpg"></a>
-                                </div>
-                                <div class="txt_pequena_gossip">
-                                    <h3>Lorem, ipsum dolor.</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-                                        delectus hic
-                                        nesciunt!
-                                    </p>
-                                </div>
-
+                            <div class="txt_pequena_gossip">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                    delectus hic
+                                    nesciunt!
+                                </p>
                             </div>
-                            <div class="musicas col-lg-6">
-                                <div id="carouselmusic" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carouselmusic" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carouselmusic" data-slide-to="1"></li>
-                                        <li data-target="#carouselmusic" data-slide-to="2"></li>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <iframe src="https://open.spotify.com/embed/track/0QKfiqpEU4h9ycPSzIFwYe"
-                                                width="250" height="280" frameborder="0" allowtransparency="true"
-                                                allow="encrypted-media"></iframe>
-                                            <iframe src="https://open.spotify.com/embed/track/08XDypkeVbvjZkVBEkORmT"
-                                                width="250" height="280" frameborder="0" allowtransparency="true"
-                                                allow="encrypted-media"></iframe>
-                                            <iframe src="https://open.spotify.com/embed/track/0aJSYAJHKf8NJJewefYxWn"
-                                                width="250" height="280" frameborder="0" allowtransparency="true"
-                                                allow="encrypted-media"></iframe>
-                                            <iframe src="https://open.spotify.com/embed/track/7FXj7Qg3YorUxdrzvrcY25"
-                                                width="250" height="280" frameborder="0" allowtransparency="true"
-                                                allow="encrypted-media"></iframe>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <iframe src="https://open.spotify.com/embed/track/5Km2Lr4mw28XVrFIwbqTId"
-                                                width="250" height="280" frameborder="0" allowtransparency="true"
-                                                allow="encrypted-media"></iframe>
-                                            <iframe src="https://open.spotify.com/embed/track/35J9vakuC3f18QTolNAQ6E"
-                                                width="250" height="280" frameborder="0" allowtransparency="true"
-                                                allow="encrypted-media"></iframe>
-                                            <iframe src="https://open.spotify.com/embed/track/16eTbulZuRufUxIOvXskO9"
-                                                width="250" height="280" frameborder="0" allowtransparency="true"
-                                                allow="encrypted-media"></iframe>
-                                            <iframe src="https://open.spotify.com/embed/track/0gtSPYz0OHoF7k09Auq1uC"
-                                                width="250" height="280" frameborder="0" allowtransparency="true"
-                                                allow="encrypted-media"></iframe>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <iframe src="https://open.spotify.com/embed/track/6bIPHR8AJG5HAcn9oF21Ma"
-                                                width="250" height="280" frameborder="0" allowtransparency="true"
-                                                allow="encrypted-media"></iframe>
-                                            <iframe src="https://open.spotify.com/embed/track/48XkVAagIoQHCsOlJtXUd5"
-                                                width="250" height="280" frameborder="0" allowtransparency="true"
-                                                allow="encrypted-media"></iframe>
-                                            <iframe src="https://open.spotify.com/embed/track/6DXZiYUbrYgrVIhfX3U9Z2"
-                                                width="250" height="280" frameborder="0" allowtransparency="true"
-                                                allow="encrypted-media"></iframe>
-                                            <iframe src="https://open.spotify.com/embed/track/6iTPUl8AFLihosFoBaqUAq"
-                                                width="250" height="280" frameborder="0" allowtransparency="true"
-                                                allow="encrypted-media"></iframe>
-                                        </div>
+                            <div class="img_pequena_gossip display-2">
+                                <a href="#"><img src="./imgs/f7.jpg"></a>
+                            </div>
+                            <div class="txt_pequena_gossip">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                    delectus hic
+                                    nesciunt!
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3">
+                            <!-- coluna da esquerda -->
+                            <div class="img_pequena_gossip display-2">
+                                <a href="#"><img src="./imgs/f12.jpg"></a>
+                            </div>
+                            <div class="txt_pequena_gossip">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                    delectus hic
+                                    nesciunt!
+                                </p>
+                            </div>
+                            <div class="img_pequena_gossip display-2">
+                                <a href="#"><img src="./imgs/f20.jpg"></a>
+                            </div>
+                            <div class="txt_pequena_gossip">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                    delectus hic
+                                    nesciunt!
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="musicas col-lg-6">
+                            <div id="carouselmusic" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselmusic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselmusic" data-slide-to="1"></li>
+                                    <li data-target="#carouselmusic" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <iframe src="https://open.spotify.com/embed/track/0QKfiqpEU4h9ycPSzIFwYe"
+                                            width="250" height="280" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
+                                        <iframe src="https://open.spotify.com/embed/track/08XDypkeVbvjZkVBEkORmT"
+                                            width="250" height="280" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
+                                        <iframe src="https://open.spotify.com/embed/track/0aJSYAJHKf8NJJewefYxWn"
+                                            width="250" height="280" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
+                                        <iframe src="https://open.spotify.com/embed/track/7FXj7Qg3YorUxdrzvrcY25"
+                                            width="250" height="280" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
                                     </div>
-                                    <a class="carousel-control-prev" href="#carouselmusic" role="button"
-                                        data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#carouselmusic" role="button"
-                                        data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row h-12 justify-content-center align-content-center">
-                                <div class="banner1">
-                                    <div class="col-lg-12">
-                                        <img src="./imgs/2.png" alt="">
+                                    <div class="carousel-item">
+                                        <iframe src="https://open.spotify.com/embed/track/5Km2Lr4mw28XVrFIwbqTId"
+                                            width="250" height="280" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
+                                        <iframe src="https://open.spotify.com/embed/track/35J9vakuC3f18QTolNAQ6E"
+                                            width="250" height="280" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
+                                        <iframe src="https://open.spotify.com/embed/track/16eTbulZuRufUxIOvXskO9"
+                                            width="250" height="280" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
+                                        <iframe src="https://open.spotify.com/embed/track/0gtSPYz0OHoF7k09Auq1uC"
+                                            width="250" height="280" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <iframe src="https://open.spotify.com/embed/track/6bIPHR8AJG5HAcn9oF21Ma"
+                                            width="250" height="280" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
+                                        <iframe src="https://open.spotify.com/embed/track/48XkVAagIoQHCsOlJtXUd5"
+                                            width="250" height="280" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
+                                        <iframe src="https://open.spotify.com/embed/track/6DXZiYUbrYgrVIhfX3U9Z2"
+                                            width="250" height="280" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
+                                        <iframe src="https://open.spotify.com/embed/track/6iTPUl8AFLihosFoBaqUAq"
+                                            width="250" height="280" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
                                     </div>
                                 </div>
+                                <a class="carousel-control-prev" href="#carouselmusic" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselmusic" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row h-12 justify-content-center align-content-center">
+                        <div class="col-lg-12">
+                            <div class="banner1">
+                                <img src="./imgs/2.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- FIM GOSSIP -->
             </div>
         </section>
+        <!-- FIM GOSSIP -->
         <!-- RODAPÉ -->
         <footer class="footer">
             <div class="texto_footer">
@@ -641,72 +673,71 @@
                         <div class="imagem_footer col-lg-2">
                             <img class="perfil" src="./imgs/IMG_20191230_142858_159.jpg" width="70%" height="70%">
                         </div>
-                        <div class="row h-12">
-                            <div class="footer_esquerda col-lg-3">
-                                <h3 class="display-6 font-weight-light">Desenvolvimento de Aplicações Web</h3>
-                                <p>Copywright, todos os direiros reservados? Nem sei se tenho direitos ;-;</p>
-                            </div>
-                            <div class="footer_esquerda col-lg-3">
-                                <img src="./imgs/P.png" width="200" height="200">
-                            </div>
-                            <div class="footer_buttons col-lg-3 align-items-left">
-                                <p>Especialmente dedicado ao meu grupo de CC que eu amo e adoro. Em especial ao Tucano,
-                                    Israel, Raissa, Camila e Luiza e ao Zoi</p>
-                            </div>
-                            <div class="footer_buttons col-lg-3 align-items-left">
-                                <div class='d-flex flex-row col-12 justify-content-end align-self-start'>
-                                    <div class='pl-2'>
-                                        <a href="" class='text-light'>Newsletter</a>
-                                    </div>
-                                    <div class='pl-2 text-logo'>
-                                        |
-                                    </div>
-                                    <div class='pl-2 '>
-                                        <a href="" class='text-light'>Register</a>
-                                    </div>
-                                    <div class='pl-2 text-logo'>
-                                        |
-                                    </div>
-                                    <div class='pl-2 pr-2'>
-                                        <a href="" class='text-light'>Login</a>
-                                    </div>
+                    </div>
+                    <div class="row h-12">
+                        <div class="footer_esquerda col-lg-3">
+                            <h3 class="display-6 font-weight-light">Desenvolvimento de Aplicações Web</h3>
+                            <p>Copywright, todos os direiros reservados? Nem sei se tenho direitos ;-;</p>
+                        </div>
+                        <div class="footer_esquerda col-lg-3">
+                            <img src="./imgs/P.png" width="200" height="200">
+                        </div>
+                        <div class="footer_buttons col-lg-3 align-items-left">
+                            <p>Especialmente dedicado ao meu grupo de CC que eu amo e adoro. Em especial ao Tucano,
+                                Israel, Raissa, Camila e Luiza e ao Zoi</p>
+                        </div>
+                        <div class="footer_buttons col-lg-3 align-items-left">
+                            <div class='d-flex flex-row col-12 justify-content-end align-self-start'>
+                                <div class='pl-2'>
+                                    <a href="" class='text-light'>Newsletter</a>
                                 </div>
-                                <div class='d-flex flex-row col-12 justify-content-end'><br></div>
-                                <div class='d-flex flex-row col-12 justify-content-end'><br></div>
-                                <div class='d-flex flex-row col-12 justify-content-end'>
-                                    <div class='pr-2'>
-                                        <a href="" class='text-light'>Country: </a>
-                                    </div>
-                                    <div class='pr-3'>
-                                        <a href=""><img src='https:/imgur.com/Y6wUSUE.png'></a>
-                                    </div>
-                                    <div class='pr-3 '>
-                                        <a href=""><img src='https:/imgur.com/Qwh3RWG.png'></a>
-                                    </div>
-                                    <div class='pr-3 '>
-                                        <a href=""><img src='https//imgur.com/nGVgGIE.png'></a>
-                                    </div>
-                                    <div class='pr-3 '>
-                                        <a href=""><img src='https:/imgur.com/zrtlalK.png'></a>
-                                    </div>
-                                    <div class=' '>
-                                        <a href=""><img src='https:/imgur.com/jiDgERM.png'></a>
-                                    </div>
+                                <div class='pl-2 text-logo'>
+                                    |
+                                </div>
+                                <div class='pl-2 '>
+                                    <a href="" class='text-light'>Register</a>
+                                </div>
+                                <div class='pl-2 text-logo'>
+                                    |
+                                </div>
+                                <div class='pl-2 pr-2'>
+                                    <a href="" class='text-light'>Login</a>
+                                </div>
+                            </div>
+                            <div class='d-flex flex-row col-12 justify-content-end'><br></div>
+                            <div class='d-flex flex-row col-12 justify-content-end'><br></div>
+                            <div class='d-flex flex-row col-12 justify-content-end'>
+                                <div class='pr-2'>
+                                    <a href="" class='text-light'>Country: </a>
+                                </div>
+                                <div class='pr-3'>
+                                    <a href=""><img src='https:/imgur.com/Y6wUSUE.png'></a>
+                                </div>
+                                <div class='pr-3 '>
+                                    <a href=""><img src='https:/imgur.com/Qwh3RWG.png'></a>
+                                </div>
+                                <div class='pr-3 '>
+                                    <a href=""><img src='https//imgur.com/nGVgGIE.png'></a>
+                                </div>
+                                <div class='pr-3 '>
+                                    <a href=""><img src='https:/imgur.com/zrtlalK.png'></a>
+                                </div>
+                                <div class=' '>
+                                    <a href=""><img src='https:/imgur.com/jiDgERM.png'></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </footer>
-
-        <!-- FIM DO RODAPÉ -->
     </div>
+    <!-- FIM DO RODAPÉ -->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/bootstrap/js/toucheffects.js"></script>
+
 
 </body>
 

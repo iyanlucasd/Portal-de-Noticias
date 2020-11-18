@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang "pt-br">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="gossip.css" media="screen" />
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <meta name="viewport" content="width=device-width, inicial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/304fafef48.js" crossorigin="anonymous"></script>
+    <script src="vendor/bootstrap/js/modernizr.custom.js"></script>
+    <script src="/gossip.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <header class="cabecalho">
+            <div class="logo">
+                <!-- Navigation -->
+                <div class="nav">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                        <a class="navbar-brand" href="#">Portal de Notícias</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <div class="regiao">
+                                        <!--Dropdown primary-->
+                                        <div class="dropdown">
+                                            <!--Trigger-->
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenu1" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">NEWS API</button>
+
+                                            <!--Menu-->
+                                            <div class="dropdown-menu dropdown-primary">
+                                                <a class="dropdown-item" href="/esporte.html">Esporte</a>
+                                                <a class="dropdown-item" href="/gossip.html">Gossip</a>
+                                                <a class="dropdown-item" href="/diversos.html">Diversos</a>
+                                            </div>
+                                        </div>
+                                        <!--/Dropdown primary-->
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Esportes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="barra">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row h-12 justify-content-center align-content-center">
+                <div class="col-lg-12">
+                    <div class="banner2">
+                        <img src="./imgs/B3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row h-12">
+                <div class="news-api"></div>
+                <div class="news-api"></div>
+                <div class="news-api"></div>
+                <div class="news-api"></div>
+                <div class="news-api"></div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="texto_footer">
+                <div class="container">
+                    <div class="row h-12 align-items-center">
+                        <div class="footer_meio col-lg-6">
+                            <h3 class="font-weight-light">Fatos Rápidos</h3>
+                            <p>Um pojeto criado para fins acadêmico que trouxe muito prazer, e muita raiva. Em meio a
+                                esses sentimentos mórbidos e alegres, se criou um site com o objetivo de, mais que
+                                informar, de ter uma conversa mais humana e literária com o leitor. </p>
+                        </div>
+                        <div class="footer_direita col-lg-4 ">
+                            <h3 class="font-weight-light">Developer</h3>
+                            <p>Cientista da computação e escritor, Iyan Lucas, vulgo eu, tem 18 anos e está no primeiro
+                                período da faculdade. Estuda na PUC Minas e é apaixonado com design gráfico,
+                                programação, literatura e filosofia. Decidiu harmonizar todo esse ecletismo nesse site.
+                            </p>
+                            <span style="color:#007bff;">
+                                <a href="https://twitter.com/HasiramaLeet"><i
+                                        class="fab fa-twitter-square fa-3x"></i></a>
+                            </span>
+                            <span style="color: #E1306C;">
+                                <a href="https://www.instagram.com/iyanlucas/?hl=pt-br"><i
+                                        class="fab fa-instagram-square fa-3x"></i></a>
+                            </span>
+                            <span style="color: #35465c;">
+                                <a href="https://acavernadeumanonimo.tumblr.com/"><i
+                                        class="fab fa-tumblr-square fa-3x"></i></a>
+                            </span>
+                        </div>
+                        <div class="imagem_footer col-lg-2">
+                            <img class="perfil" src="./imgs/IMG_20191230_142858_159.jpg" width="70%" height="70%">
+                        </div>
+                    </div>
+                    <div class="row h-12">
+                        <div class="footer_esquerda col-lg-3">
+                            <h3 class="display-6 font-weight-light">Desenvolvimento de Aplicações Web</h3>
+                            <p>Copywright, todos os direiros reservados? Nem sei se tenho direitos ;-;</p>
+                        </div>
+                        <div class="footer_esquerda col-lg-3">
+                            <img src="./imgs/P.png" width="200" height="200">
+                        </div>
+                        <div class="footer_buttons col-lg-3 align-items-left">
+                            <p>Especialmente dedicado ao meu grupo de CC que eu amo e adoro. Em especial ao Tucano,
+                                Israel, Raissa, Camila e Luiza e ao Zoi</p>
+                        </div>
+                        <div class="footer_buttons col-lg-3 align-items-left">
+                            <div class='d-flex flex-row col-12 justify-content-end align-self-start'>
+                                <div class='pl-2'>
+                                    <a href="" class='text-light'>Newsletter</a>
+                                </div>
+                                <div class='pl-2 text-logo'>
+                                    |
+                                </div>
+                                <div class='pl-2 '>
+                                    <a href="" class='text-light'>Register</a>
+                                </div>
+                                <div class='pl-2 text-logo'>
+                                    |
+                                </div>
+                                <div class='pl-2 pr-2'>
+                                    <a href="" class='text-light'>Login</a>
+                                </div>
+                            </div>
+                            <div class='d-flex flex-row col-12 justify-content-end'><br></div>
+                            <div class='d-flex flex-row col-12 justify-content-end'><br></div>
+                            <div class='d-flex flex-row col-12 justify-content-end'>
+                                <div class='pr-2'>
+                                    <a href="" class='text-light'>Country: </a>
+                                </div>
+                                <div class='pr-3'>
+                                    <a href=""><img src='https:/imgur.com/Y6wUSUE.png'></a>
+                                </div>
+                                <div class='pr-3 '>
+                                    <a href=""><img src='https:/imgur.com/Qwh3RWG.png'></a>
+                                </div>
+                                <div class='pr-3 '>
+                                    <a href=""><img src='https//imgur.com/nGVgGIE.png'></a>
+                                </div>
+                                <div class='pr-3 '>
+                                    <a href=""><img src='https:/imgur.com/zrtlalK.png'></a>
+                                </div>
+                                <div class=' '>
+                                    <a href=""><img src='https:/imgur.com/jiDgERM.png'></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- FIM DO RODAPÉ -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/toucheffects.js"></script>
+
+
+</body>
+
+</html>
